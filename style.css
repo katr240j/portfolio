@@ -40,11 +40,13 @@ p {
 /*NAVIGATION*/
 
 header {
+    margin-top: 0;
     background-color: black;
 }
 
 
 .header {
+
     background: none;
 }
 
@@ -130,10 +132,11 @@ footer {
 }
 
 footer h2 {
-    font-weight: 400;
+    font-weight: 300;
     color: white;
     text-align: right;
-    margin: 20px;
+    margin: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -160,7 +163,7 @@ footer h2 {
 
     .topbar {
 
-        height: 30px;
+        height: 40px;
         width: 300px;
 
     }
@@ -171,7 +174,7 @@ footer h2 {
         margin-top: 0px;
         text-align: left;
         text-decoration: none;
-        color: white;
+        /*        color: white;*/
         font-size: 36px;
         font-weight: 300;
         font-family: 'Roboto', sans-serif;
@@ -190,12 +193,14 @@ footer h2 {
     nav.toggle {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(3, 20px);
+        grid-template-rows: repeat(4, 20px);
     }
 
+    /*
     nav a {
         color: white;
     }
+*/
 
     #om {
         grid-column-start: 3;
