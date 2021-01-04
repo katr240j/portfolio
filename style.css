@@ -1,0 +1,239 @@
+/*Gør så man ikke kan scroll til siden*/
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*Mobile site*/
+
+body {
+    background-color: white;
+}
+
+/*FONT PÅ DET HELE*/
+p,
+h1,
+h2,
+h3,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h3 {
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+}
+
+/*NAVIGATION*/
+
+header {
+    background-color: black;
+}
+
+
+.header {
+    background: none;
+}
+
+
+.topbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 70px;
+    height: 50px;
+}
+
+.topbar a {
+    margin-left: 10px;
+    width: 200px;
+
+
+}
+
+.topbar a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 0px;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+#knap {
+    grid-column-start: 3;
+    margin-top: 0px;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#knap:hover {
+    color: #F33222;
+}
+
+
+nav a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+    color: #F33222;
+}
+
+
+
+/*Skjuler menuén indtil burgermenu er klikket på*/
+
+.toggle {
+    display: none;
+}
+
+/*NAVIGATION SLUT*/
+
+/*FOOTER*/
+
+
+
+footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+
+}
+
+footer h2 {
+    font-weight: 400;
+    color: white;
+    text-align: right;
+    margin: 20px;
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*FOOTER SLUT*/
+
+/*Desktop*/
+
+@media (min-width: 769px) {
+
+    header {
+        background: black;
+    }
+
+    /*NAVIGATION*/
+
+
+    .topbar {
+
+        height: 30px;
+        width: 300px;
+
+    }
+
+    .topbar a {
+        display: block;
+        padding: 10px;
+        margin-top: 0px;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        font-size: 36px;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #knap {
+        display: none;
+    }
+
+    header {
+        background: black;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    nav.toggle {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 20px);
+    }
+
+    nav a {
+        color: white;
+    }
+
+    #om {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    #tema02 {
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+
+    #tema03 {
+        grid-column-start: 5;
+        grid-row-start: 1;
+    }
+
+    #tema04 {
+        grid-column-start: 6;
+        grid-row-start: 1;
+    }
+
+    #tema05 {
+        grid-column-start: 7;
+        grid-row-start: 1;
+    }
+
+    #tema06 {
+        grid-column-start: 8;
+        grid-row-start: 1;
+    }
+
+    /*FOOTER*/
+
+    footer {}
+
+
+
+
+
+
+    /*FOOTER SLUT*/
