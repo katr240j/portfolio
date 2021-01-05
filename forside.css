@@ -28,10 +28,12 @@ nav a {
 
 /*Main*/
 section h1 {
+    text-transform: none;
+    text-align: left;
     margin: 5px;
     font-weight: 400;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
 
 }
 
@@ -152,28 +154,7 @@ section h1 {
 }
 
 
-/*
-.hvrbox .hvrbox-layer_bottom {
-    display: block;
-}
-*/
 
-
-/*
-.hvrbox .hvrbox-layer_top {
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 15px;
-}
-*/
 
 
 
@@ -196,11 +177,6 @@ section h1 {
     /*    display: none;*/
 }
 
-/*
-.hvrbox.active .hvrbox-text {
-    display: block;
-}
-*/
 
 
 
@@ -225,6 +201,7 @@ footer h2 {
 
     /*Main*/
     section h1 {
+        text-align: left;
         margin: 20px;
         font-size: 100px;
 

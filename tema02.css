@@ -1,0 +1,35 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+/*Mobile site*/
+/*Main*/
+#knap:hover {
+    color: #C65F62;
+}
+
+
+/*Desktop*/
+
+@media (min-width: 769px) {
+
+    /*Main*/
+
+
+
+    .section_wrapper {
+        display: grid;
+        grid-gap: 80px;
+        grid-template-columns: 1fr 1fr;
+    }

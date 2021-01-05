@@ -27,14 +27,29 @@ footer h3 {
 
 h1 {
     font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
 h2 {
     font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 300;
+    text-align: center;
 }
 
 p {
     font-weight: 300;
+    font-size: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+
 }
 
 /*NAVIGATION*/
@@ -87,7 +102,7 @@ header {
 }
 
 #knap:hover {
-    color: #F33222;
+    color: #277A4C;
 }
 
 
@@ -102,11 +117,31 @@ nav a {
     font-family: 'Roboto', sans-serif;
 }
 
-nav a:hover {
-    color: #F33222;
+
+
+#om:hover {
+    color: #277A4C;
 }
 
+#tema02:hover {
+    color: #C65F62;
+}
 
+#tema03:hover {
+    color: #2280FF;
+}
+
+#tema04:hover {
+    color: #00706C;
+}
+
+#tema05:hover {
+    color: #E05239;
+}
+
+#tema06:hover {
+    color: white;
+}
 
 /*Skjuler menuén indtil burgermenu er klikket på*/
 
@@ -196,11 +231,7 @@ footer h2 {
         grid-template-rows: repeat(4, 20px);
     }
 
-    /*
-    nav a {
-        color: white;
-    }
-*/
+
 
     #om {
         grid-column-start: 3;
@@ -230,6 +261,29 @@ footer h2 {
     #tema06 {
         grid-column-start: 8;
         grid-row-start: 1;
+    }
+
+    /*Main*/
+    h1 {
+        font-weight: 400;
+        font-size: 70px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 50px;
+    }
+
+    h3 {
+        font-weight: 300;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 22px;
+
+
     }
 
     /*FOOTER*/
