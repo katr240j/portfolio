@@ -4,6 +4,7 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
+    margin: 0px;
 }
 
 /*Mobile site*/
@@ -12,13 +13,17 @@ body {
     background-color: white;
 }
 
+
+
 /*FONT PÅ DET HELE*/
 p,
 h1,
 h2,
 h3,
+ul,
 a {
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 footer h3 {
@@ -34,14 +39,18 @@ h1 {
 }
 
 h2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
     text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
 h3 {
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
+    font-size: 10px;
+    padding: 0px;
 }
 
 p {
@@ -51,6 +60,8 @@ p {
     margin-bottom: 20px;
 
 }
+
+
 
 /*NAVIGATION*/
 
@@ -118,7 +129,6 @@ nav a {
 }
 
 
-
 #om:hover {
     color: #277A4C;
 }
@@ -150,6 +160,16 @@ nav a {
 }
 
 /*NAVIGATION SLUT*/
+/*Main*/
+/*Button*/
+button {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: none;
+    font-size: 10px;
+    align-items: center;
+}
 
 /*FOOTER*/
 
@@ -160,7 +180,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 5px;
     background-color: black;
     color: white;
 
@@ -170,8 +190,8 @@ footer h2 {
     font-weight: 300;
     color: white;
     text-align: right;
-    margin: 10px;
-    padding-bottom: 10px;
+    margin: 0px;
+    padding-bottom: 0px;
 }
 
 
@@ -265,28 +285,42 @@ footer h2 {
 
     /*Main*/
     h1 {
-        font-weight: 400;
         font-size: 70px;
-        text-transform: uppercase;
+        text-align: left;
     }
 
     h2 {
-        font-weight: 300;
+
         font-size: 50px;
+        text-align: left;
     }
 
     h3 {
-        font-weight: 300;
+
+        font-size: 25px;
+        text-align: left;
     }
 
     p {
-        font-weight: 300;
+
         font-size: 22px;
-
-
+        text-align: left;
     }
 
+    /*Main*/
+
+    /*Button*/
+    button {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border: none;
+        font-size: 20px;
+    }
+
+
     /*FOOTER*/
+
 
     footer {}
 

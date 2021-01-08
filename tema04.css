@@ -25,10 +25,90 @@ img {
 
     /*Main*/
 
+    button:hover {
+        background-color: #00706C;
+    }
 
+
+    .section_wrapper_1 {
+        text-align: left;
+        margin-left: 10px;
+        color: black;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 100px;
+    }
+
+    .section_wrapper_1 p {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 50px;
+
+    }
+
+    .section_wrapper_1 h1 {
+        text-align: left;
+        margin-left: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+
+    }
+
+    .section_wrapper_1 h2 {
+        padding: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    .section_wrapper h2 {
+        padding: 0px;
+        margin-bottom: 0px;
+
+    }
 
     .section_wrapper {
+        color: black;
+        margin-left: 0px;
         display: grid;
-        grid-gap: 80px;
+        grid-gap: 0px;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 50px;
+
+
+    }
+
+
+    .col_tekst {
+        color: black;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+
+    }
+
+    .col_tekst button {
+        margin: 10px;
+
+    }
+
+    .col_tekst p {
+        text-align: center;
+    }
+
+    .col_tekst h2 {
+        text-align: center;
+    }
+
+    .col_tekst h3 {
+        text-align: center;
+    }
+
+    .section_wrapper_sidst {
+        color: black;
+        margin-left: 0px;
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 250px;
     }
