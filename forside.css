@@ -27,13 +27,21 @@ nav a {
 }
 
 /*Main*/
+
+.section_wrap {
+    width: 100%;
+    height: 400px;
+
+}
+
+
 section h1 {
     text-transform: none;
     text-align: left;
     margin: 5px;
     font-weight: 400;
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
 
 }
 
@@ -90,7 +98,7 @@ section h1 {
     }
 
     25% {
-        transform: translateX(-30vw)translateY(24vw);
+        transform: translateX(-30vw)translateY(14vw);
         background-color: #C65F62;
     }
 
@@ -137,21 +145,26 @@ section h1 {
 
 
 .hvrbox,
-.hvrbox * {
+    {
     box-sizing: border-box;
 }
 
 .hvrbox {
     position: relative;
-    display: inline-block;
+    display: grid;
     overflow: hidden;
     max-width: 100%;
     height: auto;
+    margin: 100px;
+    align-content: center;
+    object-fit: cover;
 }
 
 .hvrbox img {
     max-width: 100%;
+
 }
+
 
 
 
@@ -163,7 +176,7 @@ section h1 {
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     display: inline-block;
@@ -194,25 +207,114 @@ footer h2 {
 
 }
 
+/*ipad*/
+
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+
+    section h1 {
+
+        margin: 10px;
+        font-size: 4.25rem;
+
+    }
+
+    .section_wrap {
+
+        height: 500px;
+
+    }
+
+
+
+
+
+
+    .box {
+        position: absolute;
+        top: 25.5vw;
+        left: 77.5vw;
+        background-color: #277A4C;
+        width: 100px;
+        height: 100px;
+        padding: 9px;
+        margin: 27px;
+
+    }
+
+    .pattern {
+        animation-name: box_2;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+
+
+
+    @keyframes box_2 {
+        0% {
+            background-color: #277A4C;
+            top: 25.5vw;
+            left: 77.5vw;
+        }
+
+
+        25% {
+            background-color: #C65F62;
+            top: 44.5vw;
+            left: 39.5vw;
+        }
+
+        50% {
+            background-color: #2280FF;
+            top: 25.5vw;
+            left: -2.5vw;
+        }
+
+        75% {
+            background-color: #00706C;
+            top: 4.5vw;
+            left: 39.5vw;
+        }
+
+        100% {
+            background-color: #E05239;
+            top: 25.5vw;
+            left: 77.5vw;
+        }
+    }
+
+
+}
 
 /*Desktop*/
 
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
 
     /*Main*/
+
+
+
     section h1 {
-        text-align: left;
+
         margin: 20px;
-        font-size: 100px;
+        font-size: 6.25rem;
 
     }
 
     .section_wrap {
         margin-bottom: 200px;
-        overflow: hidden;
+        /*        overflow: hidden;*/
+        width: 100%;
+        height: 930px;
     }
 
     /*box animaiton*/
+    .pattern {
+        animation-name: box_3;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+
     .box {
         position: absolute;
         top: 17vw;
@@ -254,46 +356,52 @@ footer h2 {
     }
 
 
-    @keyframes box_1 {
+
+    @keyframes box_3 {
         0% {
-            transform: translateX(0vw)translateY(0vw);
             background-color: #277A4C;
+            top: 17vw;
+            left: 79vw;
         }
 
+
         25% {
-            transform: translateX(-40vw)translateY(17.5vw);
             background-color: #C65F62;
+            top: 39vw;
+            left: 40vw;
         }
 
         50% {
-            transform: translateX(-79vw)translateY(0vw);
             background-color: #2280FF;
+            top: 17vw;
+            left: 2vw;
         }
 
         75% {
-            transform: translateX(-40vw)translateY(-11vw);
             background-color: #00706C;
+            top: 6vw;
+            left: 40vw;
         }
 
         100% {
-            transform: translateX(0vw)translateY(0vw);
             background-color: #E05239;
+            top: 17vw;
+            left: 79vw;
         }
     }
 
+
     /* projekt overview desktop */
 
-    .hvrbox,
-    .hvrbox * {
-        box-sizing: border-box;
-    }
 
     .hvrbox {
-        position: relative;
-        display: inline-block;
         overflow: hidden;
+        display: block;
         max-width: 100%;
-        height: auto;
+        height: 100%;
+        align-content: none;
+        margin: 0px;
+
     }
 
     .hvrbox img {
@@ -312,7 +420,7 @@ footer h2 {
 
     .hvrbox .hvrbox-layer_top {
         opacity: 0;
-        position: absolute;
+        /*        position: absolute;*/
         top: 0;
         left: 0;
         right: 0;
@@ -321,7 +429,8 @@ footer h2 {
         height: 100%;
         background: rgba(0, 0, 0, 0.6);
         color: white;
-        padding: 15px;
+        padding: 0px;
+        margin: 0px;
         -moz-transition: all 0.4s ease-in-out 0s;
         -webkit-transition: all 0.4s ease-in-out 0s;
         -ms-transition: all 0.4s ease-in-out 0s;
@@ -349,7 +458,7 @@ footer h2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-auto-rows: 1fr 1fr 2fr;
-        grid-gap: 50px;
+        grid-gap: 10px;
         cursor: pointer;
         overflow: hidden;
     }

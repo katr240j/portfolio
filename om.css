@@ -20,7 +20,21 @@ section {
 
 }
 
+.section_wrapper .col_tekst {
+    color: black;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+}
 
+.section_wrapper_1 p {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+    margin-bottom: 50px;
+
+}
 
 
 

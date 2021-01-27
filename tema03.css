@@ -14,6 +14,10 @@ img {
 }
 
 /*Mobile site*/
+.section_wrapper_sidst {
+    font-style: italic;
+}
+
 /*Main*/
 #knap:hover {
     color: #2280FF;
@@ -111,12 +115,3 @@ img {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 250px;
     }
-
-    /*
-    .col_img_3_4 img {
-        max-height: 960px;
-        max-width: 419px;
-        margin-left: 0px;
-
-    }
-*/

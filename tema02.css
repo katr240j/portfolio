@@ -103,6 +103,11 @@ nav a {
 
     }
 
+    .col {
+        text-align: center;
+        display: flex;
+
+    }
 
     .col_tekst {
         color: black;
@@ -110,11 +115,10 @@ nav a {
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 0px;
+
     }
 
-    .col_tekst p {
-        text-align: center;
-    }
+
 
     .col_tekst h2 {
         text-align: center;
