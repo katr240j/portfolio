@@ -5,12 +5,14 @@ body {
 }
 
 body {
-    background-color: white;
+    background-color: #277A4C;
 }
 
 img {
     width: 100%;
-    margin: auto;
+
+    margin: 0px;
+
 }
 
 /*Mobile site*/
@@ -19,6 +21,32 @@ section {
     margin: auto;
 
 }
+
+.img_clip {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+    background-size: cover;
+
+    clip-path: polygon(0 0, 32% 31%, 0 0, 100% 0, 69% 31%, 100% 0, 100% 100%, 69% 69%, 100% 100%, 0 100%, 31% 68%, 0 100%);
+
+    animation: clips 10s ease infinite;
+}
+
+
+@keyframes clips {
+
+
+    50% {
+        clip-path: polygon(0% 15%, 32% 31%, 15% 0%, 85% 0%, 69% 31%, 100% 15%, 100% 85%, 69% 69%, 85% 100%, 15% 100%, 31% 68%, 0% 85%);
+
+    }
+
+}
+
+
+
 
 .section_wrapper .col_tekst {
     color: black;
@@ -36,13 +64,34 @@ section {
 
 }
 
+.section_wrapper_1_bg p {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+    margin-bottom: 50px;
+    color: #277A4C;
 
+
+}
+
+.section_wrapper_1_bg h1 {
+    text-align: center;
+    color: #277A4C;
+}
+
+.section_wrapper_1_bg {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /*Desktop*/
 
 @media (min-width: 769px) {
 
     /*Main*/
+
 
     .section_wrapper_1 {
         margin-left: 20px;
@@ -52,9 +101,29 @@ section {
         grid-template-columns: 1fr 1fr;
     }
 
+    .section_wrapper_1_bg {
+        margin-left: 0px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto 1fr auto;
+
+    }
+
     .section_wrapper_1 p {
         padding: 0;
         margin-bottom: 50px;
+        margin-left: 0px;
+
+    }
+
+    .section_wrapper_1_bg p {
+        padding: 0px;
+        padding-left: 200px;
+        padding-right: 200px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+
+
 
     }
 

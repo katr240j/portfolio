@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Online Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tema04.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,21 +31,26 @@
     </header>
     <main>
         <section id="tema04">
-            <img src="billeder/img.4.1-100.jpg" alt="img.4.1">
+            <div class="img_clip">
+                <img src="billeder/img.4.1-100.jpg" alt="img.4.1">
+            </div>
             <div class="section_wrapper_1">
                 <div class="col_1">
                     <h1>Tema 04 - grunlæggende animation </h1>
-                    <p>I dette tema var vi introduceret til programmeringssproget i JavaScript, som er en vigtig del af det moderne internet og bruges til at kode mere avancerede og dynamiske websites samt interaktive elementer, som brugermenuer, slideshows, snap scroll osv. I dette tema brugede vi JavaScript sammen med css animationer, til at kode et spil.</p>
+                    <p>I dette tema blev vi introduceret til programmeringssproget JavaScript, som er en vigtig del af det moderne internet og bruges til at kode mere avancerede og dynamiske websites samt interaktive elementer, som brugermenuer, slideshows, snap scroll osv. I dette tema brugte vi JavaScript sammen med css animationer, til at kode et spil. Her arbejdede vi selvstændigt og måtte selv bestemme konceptet.</p>
                 </div>
             </div>
-            <div class="section_wrapper_1">
-                <h1>04.05.01. Individuelt spil</h1>
+            <div class="section_wrapper_1 bg">
+                <div class="col_1 bg">
+                    <h1>04.05.01. Individuelt spil</h1>
+                </div>
             </div>
-            <div class="section_wrapper">
-                <div class="col_tekst">
+            <div class="section_wrapper bg">
+                <div class="col_tekst bg">
                     <h2>Mit spil</h2>
-                    <p>Spillet er et “click” spil, hvor du kan klikke på gode og dårlige ting. Gode ting giver point og dårlige ting gør det at man mister liv. Tiden løber automatisk ud, du får 30 sekunder før spillet slutter. Mit spil handler om en sulten vegetar, som spiser kun vegetar mad og mister liv hvis hun spiser kød eller en abe som flyver med grøntsagerne på spil skærmen.</p>
-                    <div class="button">
+                    <p>Spillet er et “click” spil, hvor du kan klikke på gode og dårlige madvare. Gode madvare giver point og dårlige madvare gør det at man mister liv. Tiden løber automatisk ud, du får 30 sekunder til at skrabe point sammen før spillet slutter. Mit spil handler om en sulten vegetar, som spiser kun grøntsager og mister liv hvis hun spiser kød eller en abe som flyver med grøntsagerne på spil skærmen.</p>
+
+                    <div class="button bg">
                         <a href="http://katrinmaria.net/kea/04_animation/spil/index.html" target="_blank"> <button>Spil</button></a>
                     </div>
                 </div>
@@ -54,34 +60,36 @@
             </div>
             <div class="section_wrapper">
                 <div class="col">
-                    <img src="billeder/img.4.3.jpg" alt="img.4.3" class="responsive">
+                    <img src="billeder/img.4.3.jpg" alt="img.4.3">
                 </div>
-                <div class="col_tekst">
-                    <p>Spilet handler om at fodre vegetar figuren. På spil skærmen flyver mad som man skal klikke på til at fodre vegetaren.Du får points i form af kalorier hvis du klikker på vegetarmad men mister liv hvis du klikker på kød eller abe. Spileren begynder med 0 kalorier og tre liv. Du vinder spiller hvis du får mere end 2500 kalorier men tåber hvis du får mindre eller har mist alle af de tre liv. </p>
-                </div>
-            </div>
-            <div class="section_wrapper">
-                <div class="col_tekst">
-                    <h2>Stil og prototype</h2>
-                    <p>Jeg begyndte med at misforstå spillereglerne og var nødt til at ændre hele ideen af spillet jeg havde kommet op med, ideen skulle udfolde sig på en scene. Så jeg lavede helt ny mindmap og papirprototype, hvor jeg testede mit koncept, igen. Jeg blev meget inspireret af spillet Dumb ways to die, og brugte nogle af farverne fra det spil i mit eget. Farverne former compound farvepalet og er meget pastel akti.</p>
-                </div>
-                <div class="col">
-                    <img src="billeder/img.4.4.jpg" alt="img.4.4">
+                <div class="col_button bg">
+                    <p>Spillet handler om at fodre vegetar figuren med grøntsager. På spil skærmen flyver mad som man skal klikke på til at fodre vegetaren. Du får points i form af kalorier hvis du klikker på vegetarmad men mister liv hvis du klikker på kød eller aben. Spilleren begynder med 0 kalorier og tre liv. Du vinder spiller hvis du får mere end 2500 kalorier, men taber hvis du får mindre efter tiden er gået eller har mist alle af de tre liv.</p>
                 </div>
             </div>
             <div class="section_wrapper">
+                <div class="col_tekst bg">
+                    <h2>Idé</h2>
+                    <p>Jeg startede med at misforstå opgavebeskrivelsen, og var nødt til at ændre hele ideen med spillet. Så jeg lavede et helt nyt mindmap og papirprototype og testede mit koncept igen. Så jeg begyndte forfra med at idéudvikle mit spil. Det gik hurtigt da jeg havde fundet en af mine gammel skitser af en figur jeg godt kunne lide. Jeg besluttede mig at bruge formet fra de tidligere figurer jeg havde skabt. Jeg re-tegnede alle ui-elementerne i en ny abstrakt stil.</p>
+                </div>
                 <div class="col">
                     <img src="billeder/img.4.5.jpg" alt="img.4.5">
                 </div>
-                <div class="col_tekst">
-                    <p>Jeg fandt en gammel sketch af figur jeg havde tegnet før og gav hende navnet Hangry Vegetarian. Jeg begyndte med at skitsere de andre spil elementer ned på et stykke papir. Spil-elementerne er alle tegnet i det samme form til at forvirre spilleren og til at lave spillet sværere og sjovere.</p>
-                    <p>Så næst lavede en lille papirprototype før jeg rentegnede figurerne i Adobe illustrator. Baggrunden i spillet er meget enkelt, til at forvirret spilleren mindre. Formerne har runde hjørne og ser meget blødt ud.</p>
-                </div>
+
             </div>
             <div class="section_wrapper">
-                <div class="col_tekst">
+                <div class="col">
+                    <img src="billeder/img.4.4.jpg" alt="img.4.4">
+                </div>
+                <div class="col_tekst bg">
+                    <h2>Stil og prototype</h2>
+                    <p>Jeg blev meget inspireret af spillet ‘Dumb ways to die’, og brugte nogle af farverne fra det spil i mit eget. Farverne former et compound farvepalet og er hen af pastel farvet. Den gammel sketch figur jeg havde tegnet og valgte at bruge gav jeg navnet Hangry Vegetarian. Jeg begyndte med at skitsere de resterende spil elementer ned på papir, og brugte nogle af de elementer fra den forrige spil idé. Spil-elementerne er alle tegnet i samme form for at forvirre spilleren og at gøre spillet sværere og sjovere. Jeg lavede en mindre papirprototype før jeg rentegnede figurerne i Adobe illustrator. Baggrunden i spillet er meget enkelt, for at forvirret spilleren mindre. Formerne har runde og bløde hjørner.</p>
+
+                </div>
+            </div>
+            <div class="section_wrapper bg">
+                <div class="col_tekst bg">
                     <h2>Aktivitets-og statemachine-diagrammer</h2>
-                    <p>Gennem arbejdet med mit eget spil har jeg lært at arbejde med aktivitets-og-statemachine-diagrammer, som bruges til at planlægge det mere komplicerede interaktive flow. Aktivitetsdiagram beskriver en aktivitet som bestående af detaljerde handlinger og beslutninger. Statemachinediagram minder meget om aktivitetsdiagram, men er mere detaljerede.</p>
+                    <p>Gennem arbejdet med mit eget spil har jeg lært at arbejde med aktivitets- og statemachine-diagrammer, som bruges til at planlægge det mere komplicerede interaktive flow. Aktivitetsdiagram beskriver en aktivitet som består af detaljerede handlinger og beslutninger. Statemachinediagrammet minder om aktivitetsdiagram, men er mere detaljerede. Vi lærte at inden man kaster sig ud i JavaScript er det en rigtig god idé at planlægge det på forhånd. Det hjælper med at give et overblik over hvordan ens funktioner skal sættes op.</p>
                     <div class="button">
                         <a href="https://docs.google.com/drawings/d/https://docs.google.com/drawings/d/1UxtAXV80dWUNYytx5MZBnJw0fs0b9hfpB1BF3-UbFyU/edit?usp=sharing/edit?usp=sharing" target="_blank"> <button> Aktivitets-diagram</button></a>
 
@@ -96,43 +104,72 @@
                 </div>
             </div>
             <div class="section_wrapper_1">
-                <h1>04.01.05 Assetliste og designdokumentation</h1>
+                <div class="col_1">
+                    <h1>04.01.05 Assetliste og designdokumentation</h1>
+                </div>
             </div>
             <div class="section_wrapper">
+                <div class="col">
+                    <img src="billeder/img.4.7.jpg" alt="img.4.7">
+                </div>
                 <div class="col_tekst">
-                    <p>I denne opgave færdigørrede jeg designet til mit spil, da jeg rentegnede alle mine elementer og skærmer til spilet. På min assets list har jeg set alle mine elementer som bruges til spilet. Jeg lavede en website, der viser samtlige grafik elementer til mit spil. Websitet er utrolig simpel, indeholder masse af billeder i svg format.</p>
+                    <p>I denne opgave færdiggjorde jeg designet til mit spil, da jeg rentegnede alle mine elementer og skærme til spillet. På min assetsliste har jeg sat alle mine elementer som bruges til spillet. Jeg lavede et website, der viser samtlige grafiske elementer til spillet. Websitet er simpelt og indeholder billeder i svg format. I opgaven lærte vi at exporte vores filer fra illustrator i svg format til brug på websitet.</p>
                     <div class="button">
                         <a href="http://katrinmaria.net/kea/04_animation/spil_styletile/assets/assetslist.html" target="_blank"> <button>Assetliste og designdokumentation </button></a>
                     </div>
                 </div>
 
 
+
+            </div>
+
+            <div class="section_wrapper">
+
+                <div class="col_tekst">
+                    <h2>Point og liv</h2>
+                    <p>Point og liv kan vises som tal, hjerter eller et andet symbol. Jeg valgte at designe hjerter som liv, i spillet, og tegnede et ur som nedtælling til spillets slutning. I opgavebeskrivelsen var klart angivet at tilbageværende tid ikke måtte vises som tal, men som en progressbar eller en anden form for animation. Derfor designede jeg et ur som jeg animerede med css der roterede fra side til side som nedtælling i takt med at tiden går. Scorerne valgte jeg også at skrive med javascript, da det var nemmere når scorerne ændre sig hele tiden.</p>
+                </div>
                 <div class="col">
-                    <img src="billeder/img.4.7.jpg" alt="img.4.7">
+                    <img src="billeder/img.4.8.jpg" alt="img.4.8">
                 </div>
             </div>
 
             <div class="section_wrapper">
                 <div class="col">
-                    <img src="billeder/img.4.8.jpg" alt="img.4.8">
+                    <img src="billeder/img.4.9.jpg" alt="img.4.9">
                 </div>
                 <div class="col_tekst">
-                    <h2>Point og liv</h2>
-                    <p>Point og liv kunne vises som tal, hjerter eller noget andet symbol som forklarer meningen. Jeg valgte at designe hjerte for liv, og tegnede ur hvor jeg indsat tal som teljer ned når spillet spilles. I opgaveskrivelsen var klart angivet at tilbageværende tid måtte ikke vises som tal, men som en progressbar ellen en anden form for animation. Derfor designede jeg ur som jeg animatede med css og rotetarede det sid til sid, når ted teller ned i takt med at tiden går. Scorerne valgte jeg også at skreve med javascript, da det var nemmere når scorerne ændre sig hele tiden. </p>
+                    <h3>UI-elementer</h3>
+                    <p>Ui elementerne er alle de ting som bevæger sig eller knapper i spillet. Jeg brugte viden fra tema 2 og tema 3 samt mit højskoleophold, i form af teori om typografi, tekstopsætning, farver og komposition.</p>
+                </div>
+
+            </div>
+            <div class="section_wrapper_1">
+                <div class="col_1">
+                    <h2>Opbygning af spil</h2>
+                </div>
+            </div>
+            <div class="section_wrapper">
+
+                <div class="col_tekst">
+                    <h2>Animation i CSS</h2>
+                    <p>Vi var introduceret til hvordan man skal lave animationer via CSS. Vi lavede øvelser med forskellige animationer som vi kunne bruge til vores eget spil. Jeg brugte f.eks. flyve animation når maden i spillet bevægede sig fra position 0% op til position 100%. Senere tilføjede jeg lidt swing ind i animationen ved at roterer 5deg og til sidst tilføjede jeg scale så maden ikke kun flytter sig fra position a til b, men også udvider og trækker sig samme.</p>
+                </div>
+                <div class="col">
+                    <img src="billeder/img.4.animation.png" alt="img.4.animation">
                 </div>
             </div>
 
             <div class="section_wrapper_sidst">
-                <div class="col_tekst">
-                    <h3>UI-elementer</h3>
-                    <p>Ui elementerne er alle de ting som bevæger sig eller knapper i spillen. Jeg brugte viden fra tidligere tema, tema 2 og tema 3. Teori om typografi, tekstopsætning, farver og komposition. Jeg brugte også viden fra mit højskoleophold hvor jeg fik indblik ind i grafisk design verden. </p>
-                </div>
                 <div class="col">
-                    <img src="billeder/img.4.9.jpg" alt="img.4.9">
+                    <img src="billeder/img.4.js.png" alt="img.javascript">
                 </div>
+                <div class="col_tekst">
+                    <h3>JavaScript</h3>
+                    <p>Vi fik vores første introduktion til JavaScript hvor jeg lærte f.eks. om querySelector, EventListener, classList og meget mere. Jeg synes det var svært i begyndelsen, men senere begyndte jeg at forstå det og synes nu at det er et godt værktøj at arbejde med.</p>
+                </div>
+
             </div>
-
-
         </section>
 
 
