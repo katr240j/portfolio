@@ -86,6 +86,10 @@ section {
     padding-bottom: 10px;
 }
 
+footer a {
+    color: white;
+}
+
 /*Desktop*/
 
 @media (min-width: 769px) {
