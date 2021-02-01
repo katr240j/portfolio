@@ -19,6 +19,8 @@ header {
     background-color: white;
 }
 
+
+
 .topbar a {
 
     color: black;
@@ -61,7 +63,7 @@ nav a {
 
 .img_clip {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 50px;
 
     background-size: cover;
 
@@ -93,7 +95,12 @@ footer {
 
 @media (min-width: 769px) {
 
+    #tema06 {
+        color: #277A4C;
+    }
+
     /*Main*/
+
 
     button:hover {
         background-color: #00706C;

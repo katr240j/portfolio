@@ -18,12 +18,47 @@ img {
     background-image: cover;
 }
 
-.responsive {
-
-    width: 100%;
-    height: auto;
-
+.pila {
+    background-image: url(billeder/pila_nidur.svg);
+    background-size: cover;
+    position: absolute;
+    top: 63vw;
+    left: 50vw;
+    width: 10vw;
+    height: 3vw;
+    filter: drop-shadow(3px 3px 5px);
 }
+
+.pila_animation {
+    animation-name: pila_bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pila_bounce {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    10% {
+        transform: translate(-50%, 0);
+    }
+
+    30% {
+        transform: translate(-50%, 10px);
+    }
+
+    57% {
+        transform: translate(-50%, -3px);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+
 
 section .col_tekst,
 .section_wrapper_1 {
@@ -33,6 +68,7 @@ section .col_tekst,
 
 button {
     margin: 5px;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
 
 
@@ -164,29 +200,6 @@ nav a {
 }
 
 
-#om:hover {
-    color: #277A4C;
-}
-
-#tema02:hover {
-    color: #C65F62;
-}
-
-#tema03:hover {
-    color: #2280FF;
-}
-
-#tema04:hover {
-    color: #00706C;
-}
-
-#tema05:hover {
-    color: #E05239;
-}
-
-#tema06:hover {
-    color: #277A4C;
-}
 
 /*Skjuler menuén indtil burgermenu er klikket på*/
 
@@ -337,7 +350,43 @@ footer a {
         grid-row-start: 1;
     }
 
+    #om:hover {
+        color: #277A4C;
+    }
+
+    #tema02:hover {
+        color: #C65F62;
+    }
+
+    #tema03:hover {
+        color: #2280FF;
+    }
+
+    #tema04:hover {
+        color: #00706C;
+    }
+
+    #tema05:hover {
+        color: #E05239;
+    }
+
+    #tema06:hover {
+        color: #277A4C;
+    }
+
     /*Main*/
+
+
+    /*pila*/
+    .pila {
+
+        top: 53vw;
+        left: 95vw;
+        width: 5vw;
+        height: 1.6vw;
+
+    }
+
     h1 {
         font-size: 4.1rem;
 
@@ -420,6 +469,11 @@ footer a {
         font-size: 20px;
     }
 
+    button:hover {
+        cursor: pointer;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+
+    }
 
     /*FOOTER*/
 

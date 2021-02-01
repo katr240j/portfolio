@@ -21,9 +21,10 @@ img {
     color: #C65F62;
 }
 
+
 .img_clip {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 50px;
 
     background-size: cover;
 
@@ -97,15 +98,17 @@ footer {
     background-color: white;
 }
 
+
 /*Desktop*/
 
 @media (min-width: 769px) {
 
+    #tema02 {
+        color: #C65F62;
+    }
+
     /*Main*/
 
-    button:hover {
-        background-color: #C65F62;
-    }
 
 
     .section_wrapper_1 {
@@ -192,3 +195,4 @@ footer {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 250px;
     }
+}
