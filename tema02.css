@@ -1,18 +1,7 @@
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 body {
     background-color: #C65F62;
 }
 
-img {
-    width: 100%;
-    margin: 0px;
-
-}
 
 
 /*Mobile site*/
@@ -21,76 +10,30 @@ img {
     color: #C65F62;
 }
 
-
-.img_clip {
-    width: 100%;
-    margin-top: 50px;
-
-    background-size: cover;
-
-    clip-path: polygon(0 0, 32% 31%, 0 0, 100% 0, 69% 31%, 100% 0, 100% 100%, 69% 69%, 100% 100%, 0 100%, 31% 68%, 0 100%);
-
-    animation: clips 10s ease infinite;
-}
-
-
-@keyframes clips {
-
-    10% {
-        clip-path: polygon(0 0, 32% 31%, 0 0, 100% 0, 69% 31%, 100% 0, 100% 100%, 69% 69%, 100% 100%, 0 100%, 31% 68%, 0 100%);
-
-    }
-
-    60% {
-        clip-path: polygon(0% 15%, 32% 31%, 15% 0%, 85% 0%, 69% 31%, 100% 15%, 100% 85%, 69% 69%, 85% 100%, 15% 100%, 31% 68%, 0% 85%);
-
-    }
-
-}
-
-
-
-
 header {
     background-color: white;
 }
 
 .topbar a {
-
     color: black;
-
 }
 
 #knap {
-
     color: black;
-
 }
 
 nav a {
     color: black;
 }
 
-.bg {
-    background-color: black;
-    margin: 0px;
-}
-
 .bg p,
-
 .bg h2,
 .bg h3 {
     color: #C65F62;
-
-
-}
-
-.italic {
-    font-style: italic;
 }
 
 .bg button {
-    color: black;
+
     background-color: #C65F62;
 }
 
@@ -110,89 +53,4 @@ footer {
     /*Main*/
 
 
-
-    .section_wrapper_1 {
-        text-align: center;
-        color: black;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: auto 1fr auto;
-    }
-
-    .section_wrapper_1 p {
-        margin: 0px;
-        padding: 0px;
-        margin-bottom: 50px;
-        padding-left: 100px;
-        padding-right: 100px;
-
-    }
-
-    .section_wrapper_1 h1 {
-        margin-left: 0px;
-        padding: 0px;
-        margin-bottom: 10px;
-
-    }
-
-    .col_1 {
-        color: black;
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 0px;
-
-    }
-
-    .section_wrapper_1 h2 {
-        padding: 0px;
-        margin-bottom: 0px;
-
-    }
-
-    .section_wrapper h2 {
-        padding: 0px;
-        margin-bottom: 0px;
-
-    }
-
-    .section_wrapper {
-
-        margin-left: 0px;
-        display: grid;
-        grid-gap: 0px;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 0px;
-
-
-    }
-
-
-    .col_tekst {
-        color: black;
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 0px;
-
-    }
-
-
-
-    .col_tekst h2 {
-        text-align: center;
-    }
-
-    .col_tekst h3 {
-        text-align: center;
-    }
-
-    .section_wrapper_sidst {
-        color: black;
-        margin-left: 0px;
-        display: grid;
-        grid-gap: 0px;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 250px;
-    }
 }

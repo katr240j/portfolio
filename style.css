@@ -9,13 +9,13 @@ body {
 
 /*Mobile site*/
 
-body {
-    background-color: white;
-}
 
+/*Bacground color*/
 img {
     width: 100%;
-    background-image: cover;
+    height: auto;
+    margin: 0px;
+    object-fit: cover;
 }
 
 .pila {
@@ -60,12 +60,6 @@ img {
 
 
 
-section .col_tekst,
-.section_wrapper_1 {
-    padding: 20px;
-    text-align: center;
-}
-
 button {
     margin: 5px;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
@@ -80,7 +74,6 @@ h3,
 ul,
 a {
     font-family: 'Roboto', sans-serif;
-
     font-size: 16px;
 }
 
@@ -103,7 +96,9 @@ a {
     font-size: 1.4rem;
     text-align: center;
     padding: 0px;
-    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
 }
 
 h3 {
@@ -111,6 +106,8 @@ h3 {
     text-align: center;
     font-size: 0.825rem;
     padding: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
 }
 
 p,
@@ -119,15 +116,20 @@ ul {
     font-size: 0.7rem;
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
 
 }
 
-
+.col_tekst {
+    text-align: center;
+}
 
 /*NAVIGATION*/
 
 header {
-    margin-top: 0;
+    margin-top: 0px;
     background-color: black;
     position: fixed;
     width: 100%;
@@ -135,28 +137,15 @@ header {
     z-index: 1;
 }
 
-
-.header {
-
-    background: none;
-
-
-}
-
-
-
 .topbar {
     display: grid;
     grid-template-columns: 1fr 1fr 70px;
     height: 50px;
-
 }
 
 .topbar a {
     margin-left: 10px;
     width: 200px;
-
-
 }
 
 .topbar a {
@@ -171,10 +160,6 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-
-
 #knap {
     grid-column-start: 3;
     margin-top: 0px;
@@ -185,21 +170,15 @@ header {
     cursor: pointer;
 }
 
-
-
-
 nav a {
     display: block;
     padding: 20px;
     text-align: center;
     text-decoration: none;
     color: white;
-
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }
-
-
 
 /*Skjuler menuén indtil burgermenu er klikket på*/
 
@@ -209,6 +188,32 @@ nav a {
 
 /*NAVIGATION SLUT*/
 /*Main*/
+
+.img_clip {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    background-size: cover;
+    clip-path: polygon(0 0, 32% 31%, 0 0, 100% 0, 69% 31%, 100% 0, 100% 100%, 69% 69%, 100% 100%, 0 100%, 31% 68%, 0 100%);
+
+    animation: clips 10s ease infinite;
+}
+
+
+@keyframes clips {
+
+
+    10% {
+        clip-path: polygon(0 0, 32% 31%, 0 0, 100% 0, 69% 31%, 100% 0, 100% 100%, 69% 69%, 100% 100%, 0 100%, 31% 68%, 0 100%);
+
+    }
+
+    60% {
+        clip-path: polygon(0% 15%, 32% 31%, 15% 0%, 85% 0%, 69% 31%, 100% 15%, 100% 85%, 69% 69%, 85% 100%, 15% 100%, 31% 68%, 0% 85%);
+
+    }
+}
+
 /*Button*/
 button {
     color: white;
@@ -219,12 +224,42 @@ button {
     align-items: center;
 }
 
+/*italic skrift type*/
+.italic {
+    font-style: italic;
+}
+
+/*section_wrapper*/
+
+
+.section_wrapper_1 p {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+    margin-bottom: 50px;
+
+}
+
+
+/*section_wrapper_med sort background*/
+
+.bg {
+    background-color: black;
+    margin: 0px;
+}
+
+.bg button {
+    color: black;
+    /*   setja inn lita koða fyrir hvern og einn taka eftir skjali*/
+}
+
+.col_button {
+    text-align: center;
+}
+
 /*FOOTER*/
 
-
-
 footer {
-
     left: 0px;
     bottom: 0px;
     width: 100%;
@@ -232,7 +267,6 @@ footer {
     padding-bottom: 5px;
     background-color: black;
     color: white;
-
 }
 
 footer a {
@@ -268,26 +302,16 @@ footer a {
     }
 }
 
-
-
 /*FOOTER SLUT*/
 
 /*Desktop*/
 
 @media (min-width: 769px) {
 
-    header {
-        background: black;
-    }
-
     /*NAVIGATION*/
-
-
     .topbar {
-
         height: 40px;
         width: 300px;
-
     }
 
     .topbar a {
@@ -296,7 +320,6 @@ footer a {
         margin-top: 0px;
         text-align: left;
         text-decoration: none;
-        /*        color: white;*/
         font-size: 36px;
         font-weight: 300;
         font-family: 'Roboto', sans-serif;
@@ -317,8 +340,6 @@ footer a {
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(4, 20px);
     }
-
-
 
     #om {
         grid-column-start: 3;
@@ -376,32 +397,29 @@ footer a {
 
     /*Main*/
 
+    .bil {
+        margin-top: 20px;
+    }
 
     /*pila*/
     .pila {
-
         top: 53vw;
         left: 95vw;
         width: 5vw;
         height: 1.6vw;
-
     }
 
+    /*Font i desktop*/
     h1 {
         font-size: 4.1rem;
-
     }
 
     h2 {
-
         font-size: 3.1rem;
-
     }
 
     h3 {
-
         font-size: 2rem;
-
     }
 
     footer a {
@@ -410,30 +428,41 @@ footer a {
 
     a {
         font-size: 1.3rem;
-
     }
 
     ul,
     p {
-
         font-size: 1.4rem;
-
     }
 
-    .col_tekst p {
+    /*section_wrapper_1*/
+    .section_wrapper_1 {
+        margin: 0px;
+        padding: 0px;
         text-align: center;
-        padding-left: 73px;
-        padding-right: 73px;
-    }
-
-    .col {
-        text-align: center;
-        display: flex;
-
-    }
-
-    .col_tekst {
         color: black;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .section_wrapper_1 p {
+        margin-bottom: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .section_wrapper_1 h1 {
+        margin-bottom: 10px;
+    }
+
+    .section_wrapper_1 h2 {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    /*col1*/
+    .col_1 {
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
@@ -441,7 +470,48 @@ footer a {
 
     }
 
+    /*section_wrapper*/
+    .section_wrapper {
+        color: black;
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .section_wrapper h2 {
+        padding: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+
+    }
+
+    /*col*/
+    .col {
+        text-align: center;
+        display: flex;
+    }
+
+    .col_button {
+        text-align: center;
+        padding: 50px;
+        padding-top: 100px;
+    }
+
+    /*col_tekst*/
+
+    .col_tekst {
+        color: black;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0px;
+    }
+
+    .col_tekst p {
+        text-align: center;
+        padding-left: 73px;
+        padding-right: 73px;
+    }
 
     .col_tekst h2 {
         text-align: center;
@@ -451,14 +521,47 @@ footer a {
         text-align: center;
     }
 
-    /*Main*/
-    .responsive {
+    /*section_wrapper_sidst*/
 
-        width: 100%;
-        height: auto;
-        max-width: 700px;
-        max-height: none;
+    .section_wrapper_sidst {
+        color: black;
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 250px;
     }
+
+    /*section_wrapper_3*/
+    .section_wrapper_3 {
+        text-align: center;
+        color: black;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col_3 {
+        display: grid;
+        grid-column: 2;
+        padding-bottom: 10px;
+    }
+
+    /*section_wrapper_3*/
+    .section_wrapper_4 {
+        text-align: center;
+        color: black;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 20% auto 20%;
+    }
+
+    .col_4 {
+        display: grid;
+        grid-column: 2;
+        padding-bottom: 10px;
+    }
+
+    /*Main*/
 
     /*Button*/
     button {
@@ -477,15 +580,9 @@ footer a {
 
     /*FOOTER*/
 
-
     footer a {
         padding-bottom: 20px;
         padding-top: 20px;
     }
-
-
-
-
-
 
     /*FOOTER SLUT*/
