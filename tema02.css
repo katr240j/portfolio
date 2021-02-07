@@ -32,7 +32,7 @@ nav a {
     color: #C65F62;
 }
 
-.bg button {
+.bg .button {
 
     background-color: #C65F62;
 }
@@ -46,7 +46,7 @@ footer {
 
 @media (min-width: 769px) {
 
-    #tema02 {
+    .tema02 {
         color: #C65F62;
     }
 

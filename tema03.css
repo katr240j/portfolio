@@ -25,7 +25,7 @@ body {
     padding-right: 100px;
 }
 
-.bg button {
+.bg .button {
     background-color: #2280FF;
 }
 
@@ -38,7 +38,7 @@ footer a {
 
 @media (min-width: 769px) {
 
-    #tema03 {
+    .tema03 {
         color: #2280FF;
     }
 

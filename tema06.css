@@ -62,16 +62,13 @@ footer {
 
 @media (min-width: 769px) {
 
-    #tema06 {
+    .tema06 {
         color: #277A4C;
     }
 
     /*Main*/
 
 
-    button:hover {
-        background-color: #00706C;
-    }
 
     .col_2 {
         padding-left: 50px;

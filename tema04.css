@@ -22,7 +22,7 @@ body {
     padding: 10px;
 }
 
-.bg button {
+.bg .button {
 
     background-color: #00706C;
 }
@@ -34,7 +34,7 @@ footer a {
 /*Desktop*/
 
 @media (min-width: 769px) {
-    #tema04 {
+    .tema04 {
         color: #00706C;
     }
 

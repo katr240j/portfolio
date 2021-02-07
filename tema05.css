@@ -87,7 +87,7 @@ nav a {
 }
 
 
-.bg button {
+.bg .button {
     background-color: #E05239;
 }
 
@@ -98,7 +98,7 @@ footer {
 /*Desktop*/
 
 @media (min-width: 769px) {
-    #tema05 {
+    .tema05 {
         color: #E05239;
     }
 
@@ -138,10 +138,9 @@ footer {
         color: #E05239;
     }
 
-    button:hover {
-        background-color: #E05239;
+    .bilbil {
+        padding-top: 10vh;
     }
-
 
     .col_2 {
         padding-left: 50px;
