@@ -4,6 +4,10 @@ body {
 
 /*Mobile site*/
 
+/*fordi i previouv view i messenger facebook så gik billeden over teksten, quick fix*/
+img {
+    z-index: -1;
+}
 
 /*NAVIGATION*/
 
