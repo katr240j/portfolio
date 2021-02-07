@@ -16,8 +16,7 @@ body {
 .bg p,
 .bg h1,
 .bg h2,
-.bg h3,
-    {
+.bg h3 {
     color: #00706C;
     padding: 10px;
 }
@@ -46,3 +45,4 @@ footer a {
         padding-right: 50px;
         margin-top: 0px;
     }
+}

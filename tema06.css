@@ -44,8 +44,7 @@ nav a {
 .bg p,
 .bg h1,
 .bg h2,
-.bg h3,
-    {
+.bg h3 {
     color: #277A4C;
     padding: 10px;
 
@@ -80,3 +79,4 @@ footer {
         margin-bottom: 50px;
 
     }
+}

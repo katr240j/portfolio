@@ -29,6 +29,10 @@ body {
     background-color: #2280FF;
 }
 
+.bold {
+    font-weight: 600;
+}
+
 /*FOOTER*/
 footer a {
     color: white;
@@ -62,3 +66,4 @@ footer a {
         margin-bottom: 50px;
         padding: 10px;
     }
+}
