@@ -293,14 +293,7 @@ footer a {
     animation: floatText 15s infinite linear;
 }
 
-.footer_animation_delay_1 {
-    animation-delay: 5s;
-    animation: floatText_delay 15s infinite linear;
-}
 
-.footer_animation:hover {
-    animation-play-state: paused;
-}
 
 @keyframes floatText {
     to {
@@ -592,6 +585,10 @@ footer a {
     footer a {
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+
+    .footer_animation:hover {
+        animation-play-state: paused;
     }
 }
 
