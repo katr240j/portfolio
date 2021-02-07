@@ -473,8 +473,8 @@ footer a {
     /*col1*/
     .col_1 {
         text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 7.3vw;
+        padding-right: 7.3vw;
         margin-top: 0px;
 
     }
@@ -511,15 +511,15 @@ footer a {
     .col_tekst {
         color: black;
         text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 3.3vw;
+        padding-right: 3.3vw;
         margin-top: 0px;
     }
 
     .col_tekst p {
         text-align: center;
-        padding-left: 73px;
-        padding-right: 73px;
+        padding-left: 6.3vw;
+        padding-right: 6.3vw;
     }
 
     .col_tekst h2 {
@@ -537,7 +537,7 @@ footer a {
         display: grid;
         grid-gap: 0px;
         grid-template-columns: 1fr 1fr;
-        margin-bottom: 250px;
+        margin-bottom: 3vh;
     }
 
     /*section_wrapper_3*/
@@ -546,7 +546,7 @@ footer a {
         color: black;
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     /*section_wrapper_3*/
@@ -562,7 +562,7 @@ footer a {
     .col_4 {
         display: grid;
         grid-column: 2;
-        padding-bottom: 10px;
+        padding-bottom: 1.1vw;
     }
 
     /*Main*/
