@@ -226,8 +226,8 @@ nav a {
 }
 
 .button_container {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 /*italic skrift type*/
@@ -558,6 +558,12 @@ footer a {
         padding-bottom: 1.1vw;
     }
 
+    .col_3_tekst {
+
+        text-align: center;
+
+    }
+
     /*Main*/
 
     /*Button*/
@@ -569,10 +575,7 @@ footer a {
         font-size: 20px;
     }
 
-    .button_container {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+
 
     .button:hover {
         cursor: pointer;
